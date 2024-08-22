@@ -1,0 +1,49 @@
+ /* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensuring full height and width for html and body */
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+/* Flexbox setup for centering content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Optional background color */
+    font-family: Arial, sans-serif; /* Optional font style */
+}
+
+/* Responsive design for the video */
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries for additional responsiveness */
+@media (max-width: 600px) {
+    video {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    video {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 1025px) {
+    video {
+        max-width: 80%;
+    }
+}
